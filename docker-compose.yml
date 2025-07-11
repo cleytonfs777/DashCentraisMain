@@ -26,7 +26,7 @@ services:
     env_file: .env
     depends_on:
       - db
-    command: ["./wait-for-db.sh", "db", "python", "extractor.py"]
+    command: ["python", "extractor.py"]
     networks:
       - central_network
 
